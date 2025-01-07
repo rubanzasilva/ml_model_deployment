@@ -1,0 +1,17 @@
+service: "service:MentalHealthClassifier"
+labels:
+  owner: "rubanza"
+  stage: "production"
+include:
+  - "*.py"
+  - "data/"
+python:
+  packages:
+    - bentoml>=1.3.18
+    - xgboost
+    - scikit-learn==1.3.1
+    - pandas
+    - numpy
+    - fastai
+    
+
