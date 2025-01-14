@@ -40,11 +40,27 @@ class MentalHealthClassifier:
         test_df_new = test_dl.xs
         return test_df_new
     
+    #def preprocess(self, train_filepath, test_filepath):
+        #train_df = pd.read_csv(train_filepath)
+        #test_df = pd.read_csv(test_filepath)
+        #cont_names,cat_names = cont_cat_split(train_df, dep_var='Depression')
+        #splits = RandomSplitter(valid_pct=0.2)(range_of(train_df))
+        #to = TabularPandas(train_df, procs=[Categorify, FillMissing,Normalize],
+                           #cat_names = cat_names,
+                           #cont_names = cont_names,
+                           #y_names='Depression',
+                           #y_block=CategoryBlock(),
+                           #splits=splits)
+        #dls = to.dataloaders(bs=64)
+        #test_dl = dls.test_dl(test_df)
+        #test_df_new = test_dl.xs
+        #return test_df_new
 
     @bentoml.api
     def predict(self, data:pd.DataFrame) -> np.ndarray:
         data = self.preprocess(data)
       # data = preprocess(data)
+
 
         prediction = self.model.predict(data)
         #prediction = torch.tensor(prediction)
@@ -67,3 +83,12 @@ class MentalHealthClassifier:
         #return 
 
         #return self.model.predict(data)
+    
+    @bentoml.api()
+    def predict_csv(self,csv:Path) -> np.ndarray:
+        csv_data = pd.read_csv(csv)
+        csv_data = self.preprocess(csv_data)
+        prediction_csv = self.model.predict(csv_data)
+        return prediction_csv
+    
+
