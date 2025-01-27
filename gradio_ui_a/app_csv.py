@@ -20,8 +20,8 @@ def predict_csv_file(file_obj):
         
         # Make prediction request to BentoML service
         response = requests.post(
-            "https://mental-health-classifier-v2-63072676.mt-guc1.bentoml.ai/predict_csv",
-            #"http://localhost:3000/predict_csv",
+            #"https://mental-health-classifier-v2-63072676.mt-guc1.bentoml.ai/predict_csv",
+            "http://localhost:3000/predict_csv",
             files=files
         )
         

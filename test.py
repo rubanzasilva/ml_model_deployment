@@ -23,7 +23,7 @@ import typing as t
 import bentoml
 
 # Load the model by setting the model tag
-booster = bentoml.xgboost.load_model("mental_health_v1:55nonrglewgf3xkp")
+booster = bentoml.xgboost.load_model("mental_health_v1:2plmd4g32cn52aav")
 
 path = Path('data/')
 test_df = pd.read_csv(path/'test.csv',index_col='id')

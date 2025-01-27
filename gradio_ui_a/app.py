@@ -35,8 +35,8 @@ def predict_depression(name, gender, city, occupation_type, profession, sleep_du
     # Make prediction request to BentoML service
     try:
         response = requests.post(
-            #"http://localhost:3000/predict",
-            "https://mental-health-classifier-vl0e-63072676.mt-guc1.bentoml.ai/predict",
+            "http://localhost:3000/predict",
+            #"https://mental-health-classifier-vl0e-63072676.mt-guc1.bentoml.ai/predict",
             json=data,
             headers={"content-type": "application/json"}
         )
