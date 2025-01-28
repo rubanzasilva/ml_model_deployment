@@ -12,7 +12,7 @@ id,Name,Gender,Age,City,Working Professional or Student,Profession,Academic Pres
 140710,Keshav,Male,45,Srinagar,Working Professional,Chemist,,4.0,,,2.0,5-6 hours,Unhealthy,MD,No,5,2,Yes,No
 140711,Raghav,Male,44,Delhi,Working Professional,Content Writer,,1.0,,,4.0,5-6 hours,Moderate,B.Ed,No,4,4,Yes,No
 140712,Advait,Male,48,Lucknow,Working Professional,Consultant,,3.0,,,1.0,Less than 5 hours,Moderate,B.Com,No,4,3,No,No
-140713,Reyansh,Male,18,Visakhapatnam,Working Professional,,,5.0,,,2.0,5-6 hours,Moderate,Class 12,Yes,0,2,No,No
+140713,Reyansh,Male,18,Visakhapatnam,Working Professional,,,5.0,,,2.0,5-6 hours,Moderate,Class 12,Yes,0,2,No,Yes
 140714,Garima,Female,45,Mumbai,Working Professional,HR Manager,,5.0,,,4.0,5-6 hours,Healthy,MA,Yes,6,1,Yes,No
 140715,Anvi,Female,29,Thane,Working Professional,Research Analyst,,2.0,,,5.0,7-8 hours,Healthy,MBA,No,10,1,No,No
 140716,Rudra,Male,52,Meerut,Working Professional,Digital Marketer,,3.0,,,3.0,7-8 hours,Healthy,MA,Yes,4,2,No,No
