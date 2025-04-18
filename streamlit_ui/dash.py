@@ -76,7 +76,7 @@ def predict_batch(file):
         
         # Make prediction request to BentoML service
         response = requests.post(
-            "http://localhost:3000/predict",
+            "http://localhost:3000/predict_csv",
             json={"data": records},
             headers={"content-type": "application/json"}
         )
